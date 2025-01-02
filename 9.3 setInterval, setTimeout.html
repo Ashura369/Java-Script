@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple setTimeout</title>
+</head>
+<body>
+    <!-- Timeout function -->
+    <h1 id="message">Hello!</h1>
+    <button onclick="start ()">Click Me</button>
+
+
+    <!-- Adding a timer by Timeout function -->
+    <h2 id="timer">0</h2>
+    <button id="btnStart">Start Timer</button>
+
+
+    <script>
+        function start (){
+            setTimeout(function () {
+                document.querySelector("#message").innerHTML = "This message appears after 3 second!";
+            }, 3000); // Wait 3000 milliseconds (3 seconds)
+        }
+
+        let btnStart = document.getElementById("btnStart")
+        let count = 0
+        btnStart.addEventListener("click", function(){
+            setInterval(function(){
+                count += 1
+                timerText.textContent = counts
+            }, 1000)
+        })
+
+
+    </script>
+</body>
+</html>

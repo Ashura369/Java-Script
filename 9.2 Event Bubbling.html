@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=x, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .con{
+            background-color: lightblue;
+            border: 2px solid black;
+            padding: 90px;
+            margin: 90px;
+        }
+        .childcon{
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 60px;
+            margin: 60px;
+        }
+        .child{
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con"> I am a con !!!
+        <div class="childcon"> I am a childcon !!!
+            <div class="child">I am a child !!!</div>
+        </div>
+    </div>
+
+
+
+    <script src="9.2 Event Bubbling.js"></script>
+
+</body>
+</html>
